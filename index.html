@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        body {
+            background-color: black;
+            color: #FCAF02;
+            font-size: 28px;
+            font-weight: 400;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            padding: 24px 58px;
+            background-color: #FCAF02;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            margin: 87px 50px 140px 58px;
+            color: white;
+        }
+        h1, h2 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+        button {
+            background-color: #FCAF02;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .links {
+            position: absolute;
+            right: 78px;
+        }
+        .move {
+            margin-right: 50px;
+        }
+
+        #logo {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        #intro {
+            height: 20vh;
+            width: 50vw;
+        }
+        #para {
+            padding-block: 4% 4%;
+            margin-left: 5px;
+        }
+        #login {
+            padding: 14px 114px 13px;
+            margin: 0 0 0px 5px;
+            border: none;
+            border-radius: 500px;
+        }
+        #intro, figure {
+            display: inline-block;
+        }
+        #contact {
+            margin: 0 0 0 63px;
+        }
+        ::placeholder {
+            color: #FCAF02;
+            font-size: 28px;
+        }
+        input {
+            background-color: black;
+            color: #FCAF02;
+            font-size: 28px;
+            border: 1px solid #FCAF02;
+            border-radius: 100px;
+            outline: none;
+            padding: 24px 58px 24px;
+        }
+        .block {
+            width: 85vw;
+        }
+        .line {
+            width: 35vw;
+        }
+        #name {
+            margin-top: 64px;
+        }
+        #email {
+            margin-block: 50px;
+        }
+        #phone {
+            margin-right: 16vh;
+        }
+        #submit {
+            margin: 67px 0 116px 38%;
+            padding: 21px 53px 22px;
+            border: none;
+            border-radius: 100px;
+        }
+        table {
+            margin: auto;
+            height: 34px;
+            width: 95%;
+            text-align: center;
+        }
+        table, td, th {
+            border: 1px solid #FCAF02;
+            border-collapse: collapse;
+        }
+        #tfoot{
+            height: 34px;
+            width: auto;
+            color: black; 
+            background-color: #FCAF02;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span id="logo">Start<u>up</u></span>
+        <span class="links">
+            <a class="move" href="index.html" target="_self">Home</a>
+            <a class="move" href="" target="_self">About Us</a>
+            <a class="move" href="#contact" target="_self">Contact Us</a>
+            <a href="" target="_self">Login</a>
+        </span>
+    </nav>
+
+    <div id="page">
+        <header>
+            <div id="intro">
+                <h1>Startup Landing Page</h1>
+                <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button id="login" type="submit">Login</button>
+            </div>
+            <figure>
+                <img src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YpP11HxGy1Jn~G~u-5iPmcMfJncaBDycPi3kPCK7Ko-n-v2xyxTVCaGlFqYUELH~-3Iguyd-wXOsgCQEp9U8bo6cOYcV4vII6LhnS2VYJfKAs4tYD48qatTQOKJL1Kvbf~gQ6JV8z7Mwmno1u~UTYf3TkI-wOT8vbFqWBA9dc2oB2aNxIyv3JTBuKINms6S0oO5BESo5DfUgDQqtHy9ZWhF~OuzWJSLtjtODzVC-uyYW-7SEPNfTN4poi3iYMBFFxr5bCu5nESxIb~bdhrUeWDOLwX8b-0oHBXqimiFe8y1cTE4EJHv-rRwDkIc9Fofvs5ekTn0ZJVmEBjysZwovvQ__" title="Jeff Bezos" alt="Image offline" width="697px" height="482px" top="173px" left="1678px" gap="0px" opacity="0px" angle="-180 deg">
+            </figure>
+        </header>
+        <br>
+        <main>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div id="inputs">
+                    <form action="" method="post" name="contact">
+                        <input id="name" class="block" type="text" pattern="^[a-zA-Z]+(\s{1}[a-zA-Z]+)*$" placeholder="Name">
+                        <input id="email" class="block" type="email" placeholder="Email">
+                        <input id="phone" class="line" type="tel" pattern="^[0-9]{10-11}$" placeholder="Mobile Number">
+                        <input id="city" class="line" type="text" placeholder="City">
+                        <br>
+                        <button id="submit" type="submit">Submit Form</button>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNO.</th>
+                            <th>Startup Name</th>
+                            <th>Startup Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="6">
+                                <br>
+                                <p>1.</p>
+                                <br>
+                                <p>2.</p>
+                                <br>
+                                <p>2.</p>
+                                <br>
+                                <p>2.</p>
+                                <br>
+                                <p>2.</p>
+                                <br>
+                                <p>2.</p>
+                                <br>
+                            </td>
+                            <td rowspan="6">
+                                <br>
+                                <p>WowIndia</p>
+                                <br>
+                                <p>Lorem Ipsum</p>
+                                <br>
+                                <p>Lorem Ipsum</p>
+                                <br>
+                                <p>Lorem Ipsum</p>
+                                <br>
+                                <p>Lorem Ipsum</p>
+                                <br>
+                                <p>Lorem Ipsum</p>
+                                <br>
+                            </td>
+                            <td rowspan="6">
+                                <br>
+                                <p>A startup with WOW Ideas.</p>
+                                <br>
+                                <p>Lorem Ipsum Text</p>
+                                <br>
+                                <p>Lorem Ipsum Text</p>
+                                <br>
+                                <p>Lorem Ipsum Text</p>
+                                <br>
+                                <p>Lorem Ipsum Text</p>
+                                <br>
+                                <p>Lorem Ipsum Text</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot id="tfoot">
+                        <tr>
+                            <br>
+                            <td>00.</td>
+                            <br>
+                            <td>Final Footer</td>
+                            <br>
+                            <td>Lorem Ipsum Text</td>
+                            <br>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <br>
+            <br>
+            <br>
+        </main>
+    </div>
+</body>
+
+</html>
